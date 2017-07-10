@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="controlador" android:versionName="pro-2" android:versionCode="002">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo_gps"
+        android:logo="@mipmap/logo_gps"
+        android:label="ZonaGPS"
+        android:roundIcon="@mipmap/engranaje_ico"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:debuggable="false">
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyDZSy4XuPuegyjzmmMiqybzMDznY_gauSc"/>
+        <meta-data android:name="com.google.android.directions.API_KEY" android:value="AIzaSyAWtLyrDL048DsX1uCtkA8spsYLNqMqchA"/>
+
+        <activity android:name=".MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".VistaMoviles" android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name=".VistaMensajes" android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name=".VistaInformacion" android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name=".VistaContacto" android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name=".VistaRutaUbicacion" android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name=".VistaGrafico" android:screenOrientation="landscape">
+
+        </activity>
+
+        <activity android:name=".VistaFoto" android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name=".VistaAcciones" android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".VistaTemperatura" android:screenOrientation="portrait">
+        </activity>
+
+
+    </application>
+
+</manifest>
