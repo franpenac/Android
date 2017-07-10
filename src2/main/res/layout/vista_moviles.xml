@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@color/FondoTituloContacto"
+    >
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        ></include>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/BlackLine"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/transparent_color">
+
+        <EditText
+            android:id="@+id/etBuscarPatente"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:selectAllOnFocus="false"
+            android:text="Escriba patente o movil"
+            android:textAlignment="viewStart"
+            android:textColor="@color/LetrasLogin"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/spnMoviles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:ems="10"
+            android:paddingLeft="15dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:background="@color/SeparacionVistaMoviles" />
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/sbVistaMoviles">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="62dp">
+
+                <Button
+                    android:id="@+id/btnFilterEstado"
+                    android:layout_width="70dp"
+                    android:layout_height="60dp"
+                    android:background="@color/WhiteLine"
+                    android:text="Estado"
+                    android:enabled="false"
+                    android:textAllCaps="false"
+                    android:textColor="@color/BlackLine" />
+
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@android:color/black"/>
+
+                <Button
+                    android:id="@+id/btnFilterPatente"
+                    android:layout_width="70dp"
+                    android:layout_height="60dp"
+                    android:background="@color/WhiteLine"
+                    android:text="Patente"
+                    android:textAllCaps="false"
+                    android:textColor="@color/BlackLine" />
+
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@android:color/black"/>
+
+                <Button
+                    android:id="@+id/btnFilterReport"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:background="@color/WhiteLine"
+                    android:text="Reporte"
+                    android:textAllCaps="false"
+                    android:textColor="@color/BlackLine" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@android:color/black" />
+
+                <Button
+                    android:id="@+id/btnFilterMovil"
+                    android:layout_width="89dp"
+                    android:layout_height="60dp"
+                    android:background="@color/WhiteLine"
+                    android:text="Movil"
+                    android:textAllCaps="false"
+                    android:textColor="@color/BlackLine" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@android:color/black"/>
+
+                <Button
+                    android:id="@+id/btnFilterVelocidad"
+                    android:layout_width="49dp"
+                    android:layout_height="60dp"
+                    android:background="@color/WhiteLine"
+                    android:text="Km/h"
+                    android:textAllCaps="false"
+                    android:textColor="@color/BlackLine" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@android:color/black"/>
+
+                <Button
+                    android:id="@+id/btnFilterIgnicion"
+                    android:layout_width="59dp"
+                    android:layout_height="60dp"
+                    android:background="@color/WhiteLine"
+                    android:text="Ignición"
+                    android:textAllCaps="false"
+                    android:textColor="@color/BlackLine" />
+
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@android:color/black"/>
+
+                <Button
+                    android:id="@+id/btnFilterTemperatura"
+                    android:layout_width="40dp"
+                    android:layout_height="60dp"
+                    android:background="@color/WhiteLine"
+                    android:text="T°"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/BlackLine" />
+
+            </LinearLayout>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/lvMain"
+                android:layout_weight="0.95"
+                android:headerDividersEnabled="false"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WhiteLine">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        ></include>
+
+    <TextView
+        android:text="CONTACTO"
+        android:layout_width="match_parent"
+        android:id="@+id/textView"
+        android:layout_height="50dp"
+        android:textColor="@color/BlackLine"
+        android:paddingTop="10dp"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:background="@color/FondoTituloContacto"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="Horarios de atención:"
+        android:layout_width="match_parent"
+        android:id="@+id/textView2"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/BlackLine"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:text="Lunes a Viernes de 10:00 hasta las 19:00"
+        android:layout_width="match_parent"
+        android:id="@+id/textView3"
+        android:textColor="@color/BlackLine"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"/>
+
+
+    <TextView
+        android:text="Avenida Nueva Costanera 3972"
+        android:layout_width="match_parent"
+        android:id="@+id/textView8"
+        android:textColor="@color/BlackLine"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:layout_height="30dp"
+        android:layout_marginTop="1dp" />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/boton_llamar"
+        android:id="@+id/btnLlamar"
+        android:layout_marginTop="35dp"
+        android:background="@color/transparent_color" />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/boton_correo"
+        android:id="@+id/btnCorreo"
+        android:layout_marginTop="20dp"
+        android:background="@color/transparent_color" />
+
+    <TextView
+        android:text="Para mayor información visita la web"
+        android:layout_width="match_parent"
+        android:layout_marginTop="70dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:textAlignment="center"
+        android:textColor="@color/BlackLine"
+        android:textSize="16sp" />
+
+    <TextView
+        android:text="www.zonagps.cl"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView9"
+        android:textAlignment="center"
+        android:textColor="@color/LetrasLogin"
+        android:textSize="16sp" />
+
+</LinearLayout>

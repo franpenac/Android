@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WhiteLine">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        ></include>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/BlackLine"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/grid_info">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:id="@+id/linear_info"
+                android:layout_height="275dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tvTituloAdvertencia"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/FondoTituloContacto"
+                    android:paddingTop="10dp"
+                    android:text="¡ ADVERTENCIA !"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ProgressBar
+                    style="@android:style/Widget.Holo.ProgressBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:id="@+id/pbMensajes"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    android:id="@+id/tvTextoAdvertencia1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:text="Verificar que el móvil este detenido, Y SEGUIR EL PROTOCOLO ENTREGADO EN EL CONTRATO FIRMADO POR AMBAS PARTES, para prevenir cualquier tipo de accidente. De acuerdo a la clausula CUARTA del contrato firmado por ambas partes, le recordamos que ambas acciones son de completa y exclusiva RESPONSABILIDAD del MANDANTE."
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btnReanudar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/transparent_color"
+                    app:srcCompat="@mipmap/reanudarencendido" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp">
+
+                <ImageButton
+                    android:id="@+id/btnInmovilizar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/transparent_color"
+                    app:srcCompat="@mipmap/botoninmovilizar" />
+            </LinearLayout>
+
+
+        </GridLayout>
+
+    </ScrollView>
+</LinearLayout>

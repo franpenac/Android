@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        ></include>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/BlackLine"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/BackColorGrey">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/BackColorGrey">
+
+            <FrameLayout
+                android:id="@+id/cfInfo"
+                android:layout_width="match_parent"
+                android:layout_height="233dp">
+
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etDireccion"
+                android:textSize="16sp"
+                android:textColor="@color/WhiteLine" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/BlackLine"/>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:id="@+id/lvInfo"
+                android:scrollbars="horizontal|vertical"
+                android:layout_height="260dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

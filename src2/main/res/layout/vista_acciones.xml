@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WhiteLine">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        ></include>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/BlackLine"/>
+
+    <TextView
+        android:text="ACCIONES"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingTop="10dp"
+        android:id="@+id/textView4"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="@color/BlackLine"
+        android:textStyle="normal|bold"
+        android:fontFamily="sans-serif"
+        android:background="@color/FondoTituloContacto"/>
+
+    <ImageButton
+        android:id="@+id/btnAccionReiniciar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@color/transparent_color"
+        app:srcCompat="@mipmap/reiniciardispositivogps" />
+
+    <ImageButton
+        android:id="@+id/btnGestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/transparent_color"
+        app:srcCompat="@mipmap/corta_corrientes" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/pbAcciones"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/btnGrafico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent_color"
+        app:srcCompat="@mipmap/boton_temperatura" />
+
+    <Button
+        android:id="@+id/btnRuta"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="90dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/boton_redondo_login"
+        android:text="Como llegar"
+        android:textColor="@android:color/white"
+        android:visibility="invisible" />
+
+</LinearLayout>

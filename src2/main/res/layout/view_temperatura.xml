@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BackColorGrey">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <FrameLayout
+            android:id="@+id/fmlPatente"
+            android:layout_width="190dp"
+            android:layout_height="50dp">
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvViewHora"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:textAlignment="center"
+                android:textStyle="normal|bold"
+                android:textColor="@color/BlackLine" />
+
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:background="@android:color/black"
+            android:layout_height="50dp" />
+
+        <FrameLayout
+            android:id="@+id/fmlReporte"
+            android:layout_width="190dp"
+            android:layout_height="50dp">
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tvViewTemp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:textAlignment="center"
+                android:textColor="@color/BlackLine"
+                android:textStyle="normal|bold"
+                android:textSize="14sp" />
+
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="380dp"
+        android:layout_height="1dp"
+        android:background="@android:color/black"/>
+
+</LinearLayout>

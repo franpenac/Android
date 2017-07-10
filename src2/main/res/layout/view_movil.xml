@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BackColorGrey"
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/fmlEstado"
+        android:layout_width="70dp"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/imgAntena"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"/>
+
+        <ImageView
+            android:id="@+id/imgBateria"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="2dp"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_height="60dp"
+        android:id="@+id/fmlPatente"
+        android:layout_width="71dp">
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@android:color/black" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvGridPatente"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/WhiteLine" />
+
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fmlReporte"
+        android:layout_width="81dp"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/tvGridReporte"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="20dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="@color/WhiteLine" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@android:color/black" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fmlMovil"
+        android:layout_width="90dp"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/tvGridMovil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="@color/WhiteLine" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@android:color/black" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fmlVelocidad"
+        android:layout_width="50dp"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/tvGridVelocidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="@color/WhiteLine" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@android:color/black" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fmlIgnicion"
+        android:layout_width="60dp"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/tvGridIgnicion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="@color/WhiteLine" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@android:color/black" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fmlTemperatura"
+        android:layout_width="30dp"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/tvGridTemperatura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="@color/WhiteLine" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@android:color/black" />
+    </FrameLayout>
+
+</LinearLayout>

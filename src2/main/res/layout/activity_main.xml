@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/FondoTituloContacto"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/bar_login"
+        ></include>
+
+    <TextView
+        android:text="Cliente"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/txtClienteUsuario"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:background="@color/FondoTituloContacto"
+        android:textColor="@color/BlackLine"
+        android:paddingTop="5dp"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        tools:text="CLIENTE"
+        android:textStyle="normal|bold" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginLeft="100dp"
+        android:id="@+id/etCliente"
+        android:textColorLink="@color/LetrasLogin"
+        android:layout_centerHorizontal="true"
+        android:text="ssss"
+        android:textColor="@color/LetrasLogin"
+        android:textAlignment="center"
+        android:linksClickable="false"
+        android:layout_width="160dp" />
+
+    <TextView
+        android:text="Nombre usuario"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/FondoTituloContacto"
+        android:id="@+id/txtNombreUsuario"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="normal|bold"
+        android:textColor="@color/BlackLine"
+        android:layout_marginTop="10dp"
+        android:paddingTop="5dp"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        tools:text="NOMBRE DE USUARIO" />
+
+    <EditText
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etNombreUsuario"
+        android:layout_marginLeft="100dp"
+        android:textColorLink="@color/LetrasLogin"
+        android:layout_centerHorizontal="true"
+        android:text="ssss"
+        android:textColor="@color/LetrasLogin"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="Contreseña"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/FondoTituloContacto"
+        android:id="@+id/txtContrasena"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="normal|bold"
+        android:textColor="@color/BlackLine"
+        android:layout_marginTop="10dp"
+        android:paddingTop="5dp"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        tools:text="CONTRASEÑA" />
+
+    <EditText
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_marginLeft="100dp"
+        android:ems="10"
+        android:textColorLink="@color/LetrasLogin"
+        android:id="@+id/etContrasena"
+        android:layout_centerHorizontal="true"
+        android:text="ssss"
+        android:textColor="@color/LetrasLogin"
+        android:textAlignment="center"
+        />
+
+    <ProgressBar
+        style="@android:style/Widget.Holo.ProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pbLogin"
+        android:layout_below="@+id/txtNombreUsuario"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"/>
+
+    <CheckBox
+        android:text="Desea guardar  su contraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/chkGuardar"
+        android:textColor="@color/BlackLine"
+        android:textStyle="normal|bold"
+        android:layout_marginLeft="70dp"/>
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/boton_login"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnLogin"
+        android:background="@color/transparent_color" />
+
+</LinearLayout>
