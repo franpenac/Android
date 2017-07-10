@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ColorPrimary">#1F4E79</color>
+    <color name="ColorPrimaryDark">#1F4E79</color>
+    <color name="BackColor">#5B9BD5</color>
+    <color name="BackColorGrey">#3d3f3e</color>
+    <color name="BlackLine">#000000</color>
+    <color name="WhiteLine">#ffffff</color>
+    <color name="Rojo">#ff0000</color>
+    <color name="Verde">#3DBB5E</color>
+    <color name="Amarillo">#E5F143</color>
+    <color name="transparent_color">#00000000</color>
+    <color name="FondoTituloContacto">#E6E7E8</color>
+    <color name="LetrasLogin">#209bd7</color>
+    <color name="SeparacionVistaMoviles">#414042</color>
+</resources>
